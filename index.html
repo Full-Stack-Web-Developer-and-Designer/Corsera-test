@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Datepicker to Disable Previous Dates</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
+        <script>
+          $(document).ready(function(){
+	var minDate = new Date();
+	// Getter
+	$('#depart').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		minDate: minDate,
+		firstDay:1,
+		dateFormat: 'DD, dd/mm/yy',
+		showAnim:'slideDown',
+		onClose: function(selectedDate){
+			jQuery('#return').datepicker("option", "minDate", selectedDate);
+		}
+	});
+
+	$('#return').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		minDate: minDate,
+		firstDay:1,
+		dateFormat: 'DD, dd/mm/yy',
+		onClose:function(selectedDate){
+			jQuery('#depart').datepicker("option","maxDate",selectedDate);
+		}
+	});
+});
+        </script>
+        <style>main{width: 70%;margin: 100px auto;padding: 1px 50px 50px;background-color:#AAA;}h1{color:#FFF;text-align:center;}input{margin: 0 15px 0 0;}</style>
+    </head>
+    <body>
+    <main>
+		<h1>Make your reservation in the time!</h1>
+        <input type="text" placeholder="Origin" id="origin" >
+        <input type="text" placeholder="Destination" id="destination" >
+        <input type="text" placeholder="Depart Date" id="depart" >
+        <input type="text" placeholder="Return Date" id="return">
+        <select id="seat">
+            <option value="1">1 Seat</option>
+            <option value="2">2 Seat</option>
+        </select> 
+        <input type="submit" value="Search">
+    </main>
+</body>
+</html>
