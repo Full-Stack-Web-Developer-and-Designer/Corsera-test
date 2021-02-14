@@ -4,6 +4,8 @@ This is the repository for **jQuery datepicker**. For this repository we need th
 2. [jQuery.ui.css](https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css)
 3. [jQuery.ui.js](https://code.jquery.com/ui/1.12.1/jquery-ui.js)
 ---
-This repository contains the **jQuery** _function_ for change the year, month, date format and the first day of the week, which in this case is set to Monday. 
+This repository contains the **jQuery** _function_ for change the _year_, _month_, _date format_ and _the first day of the week_, which in this case is set to Monday. 
 Also, after selecting a date, the selection of previous dates is disabled. 
+## 
+[PREVIEW](https://full-stack-web-developer-and-designer.github.io/jQuery-datepicker/)
 
