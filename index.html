@@ -35,7 +35,42 @@
 	});
 });
         </script>
-        <style>main{width: 70%;margin: 100px auto;padding: 1px 50px 50px;background-color:#AAA;}h1{color:#FFF;text-align:center;}input{margin: 0 15px 0 0;}</style>
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <style>
+        main {
+            width: 70%;margin: 100px auto;
+            padding: 1px 50px 50px;background-color:#AAA;
+        }
+        h1{
+            color:#FFF;
+            text-align:center;
+        }
+        input{
+            margin: 0 15px 0 0;
+        }
+        #footer {
+            background-color: #808080;
+            /* position: absolute;
+            bottom: 0;*/
+            width: 100%;
+            }
+        .footer-social {
+             text-align: center;
+        }
+        a {
+            text-decoration: none;
+        }
+        .footer-social a:link .footer-icon,
+        .footer-social a:visited .footer-icon {
+            color: #FFF;
+            font-size: 2em;
+            padding: 10px;
+        }
+        .footer-social a:hover .footer-icon {
+            color: #808080;
+            background-color: #FFF;
+        }
+        </style>
     </head>
     <body>
     <main>
@@ -50,5 +85,20 @@
         </select> 
         <input type="submit" value="Search">
     </main>
+    <div id="footer">
+        <section class="footer-social">
+          <a href="https://www.facebook.com/mirnes.glamocic.5/" target="_blank">
+            <i class="footer-icon fab fa-facebook"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mirnes-glamocic/" target="_blank">
+            <i class="footer-icon fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Full-Stack-Web-Developer-and-Designer/" target="_blank"><i class="footer-icon fab fa-github"></i>
+          </a>
+          <a href="https://mirnesglamocic.com/" target="_blank">
+            <i class="footer-icon fab fa-dribbble"></i>
+          </a>
+        </section>
+      </div><!-- end #footer -->
 </body>
 </html>
